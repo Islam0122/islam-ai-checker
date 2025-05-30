@@ -1,10 +1,9 @@
 import React from 'react';
-import Home from "./pages/Home.jsx";
-
+import Home from './pages/Home';
 
 function App() {
     return (
-        <div className="min-h-screen bg-gray-50 p-4">
+        <div className="container">
             <Home />
         </div>
     );

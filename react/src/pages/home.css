@@ -85,3 +85,43 @@
     border: 1px solid #fca5a5;
     color: #991b1b;
 }
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 10px;
+    }
+
+    .banner,
+    .footer-banner {
+        padding: 16px;
+        margin-bottom: 24px;
+    }
+
+    .banner h1 {
+        font-size: 22px;
+    }
+
+    .banner p {
+        font-size: 14px;
+    }
+
+    .ai-response {
+        padding: 16px;
+        margin: 20px auto;
+    }
+
+    .ai-response h3 {
+        font-size: 16px;
+        gap: 6px;
+    }
+
+    .response-text {
+        font-size: 14px;
+    }
+
+    .telegram-status {
+        padding: 12px;
+        font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

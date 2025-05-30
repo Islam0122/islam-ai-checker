@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { sendPrompt } from '../services/aiService';
-import { sendTelegramMessage } from '../services/telegramService';
+import React, {useState} from 'react';
+import {sendPrompt} from '../services/aiService';
+import {sendTelegramMessage} from '../services/telegramService';
 import Form from '../components/Form';
 
 export default function Home() {
@@ -46,7 +46,7 @@ _______________
 🔗 GitHub: ${formData.github || 'Нет ссылки'}
 _______________
 
-🧑‍🏫 Комментарий от islamTeacher_ai_checker:
+🧑‍🏫 Комментарий от IslamTeacher_AI_Checker:
 ${responseFromAI}
 `;
 
@@ -68,17 +68,17 @@ ${responseFromAI}
         <>
             <div className="card">
                 <h1>📘 Islam AI Checker</h1>
-                <p>Умная проверка домашних заданий + Telegram</p>
+                <p>Домашка под контролем. Проверка и помощь — мгновенно!</p>
             </div>
 
-            <Form onSubmit={handleFormSubmit} />
+            <Form onSubmit={handleFormSubmit}/>
 
             {loading && <p className="card">⏳ Загрузка...</p>}
 
             {aiResponse && (
                 <div className="card">
-                    <h3>🤖 Комментарий от Islam Teacher ai chacker:</h3>
-                    <p style={{ whiteSpace: 'pre-line' }}>{aiResponse}</p>
+                    <h3>🤖 Комментарий от Islam Teacher AI Checker:</h3>
+                    <p style={{whiteSpace: 'pre-line'}}>{aiResponse}</p>
                 </div>
             )}
 
@@ -89,7 +89,12 @@ ${responseFromAI}
             )}
 
             <div className="card">
-                <p>Связь , GitHub  <a style={{color: "black"}} href='https://github.com/Islam0122'>Islam0122</a> ,  Telegram : <a style={{color: "black"}} href="https://t.me/duishobaevislam01https://t.me/duishobaevislam01https://t.me/duishobaevislam01">duishobaevislam01</a>  Instagram:  <a style={{color: "black"}} href="https://www.instagram.com/duishobaevislam01">duishobaevislam01</a></p>
+                <p>Связь: +996552325295 , GitHub <a style={{color: "black"}}
+                                                    href='https://github.com/Islam0122'>Islam0122</a> , Telegram : <a
+                    style={{color: "black"}}
+                    href="https://t.me/duishobaevislam01https://t.me/duishobaevislam01https://t.me/duishobaevislam01">duishobaevislam01</a> Instagram: <a
+                    style={{color: "black"}} href="https://www.instagram.com/duishobaevislam01">duishobaevislam01</a>
+                </p>
             </div>
         </>
     );
